@@ -1,0 +1,10 @@
+**/node_modules
+**/dist
+**/coverage
+**/build
+**/tests
+
+.github
+.devcontainer
+.git
+.vscode

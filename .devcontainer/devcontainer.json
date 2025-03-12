@@ -1,0 +1,23 @@
+{
+    "name": "react-stack",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dotenv.dotenv-vscode",
+                "YoavBls.pretty-ts-errors",
+                "bradlc.vscode-tailwindcss",
+                "esbenp.prettier-vscode",
+                "streetsidesoftware.code-spell-checker",
+                "eamodio.gitlens",
+                "tamasfe.even-better-toml",
+                "ms-playwright.playwright",
+                "vitest.explorer",
+                "dbaeumer.vscode-eslint",
+                "whtouche.vscode-js-console-utils"
+            ]
+        }
+    }
+}
