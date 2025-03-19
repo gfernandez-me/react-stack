@@ -1,80 +1,96 @@
-![reactjs-vite-tailwindcss-boilerplate](https://user-images.githubusercontent.com/16243531/217138979-b854309c-4742-4275-a705-f9fec5158217.jpg)
+# Welcome to React Router!
 
-# React Tailwindcss Boilerplate build with Vite
+A modern, production-ready template for building full-stack React applications using React Router.
 
-This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.
+## Features
 
-## What is inside?
-
-This project uses many tools like:
-
-- [Vite](https://vitejs.dev)
-- [ReactJS](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Vitest](https://vitest.dev)
-- [Testing Library](https://testing-library.com)
-- [Tailwindcss](https://tailwindcss.com)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
+- 🚀 Server-side rendering
+- ⚡️ Hot Module Replacement (HMR)
+- 📦 Asset bundling and optimization
+- 🔄 Data loading and mutations
+- 🔒 TypeScript by default
+- 🎉 TailwindCSS for styling
+- 💾 PostgreSQL + DrizzleORM
+- 📖 [React Router docs](https://reactrouter.com/)
 
 ## Getting Started
 
-### Install
+### Installation
 
-Create the project.
-
-```bash
-pnpm dlx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
-```
-
-Access the project directory.
+Install the dependencies:
 
 ```bash
-cd my-app
+npm install
 ```
 
-Install dependencies.
+### Development
+
+Copy `.env.example` to `.env` and provide a `DATABASE_URL` with your connection string.
+
+Run an initial database migration:
 
 ```bash
-pnpm install
+npm run db:migrate
 ```
 
-Serve with hot reload at <http://localhost:5173>.
+Start the development server with HMR:
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
-### Lint
+Your application will be available at `http://localhost:5173`.
+
+## Building for Production
+
+Create a production build:
 
 ```bash
-pnpm run lint
+npm run build
 ```
 
-### Typecheck
+## Deployment
+
+### Docker Deployment
+
+To build and run using Docker:
 
 ```bash
-pnpm run typecheck
+# For npm
+docker build -t my-app .
+
+# Run the container
+docker run -p 3000:3000 my-app
 ```
 
-### Build
+The containerized application can be deployed to any platform that supports Docker, including:
 
-```bash
-pnpm run build
+- AWS ECS
+- Google Cloud Run
+- Azure Container Apps
+- Digital Ocean App Platform
+- Fly.io
+- Railway
+
+### DIY Deployment
+
+If you're familiar with deploying Node applications, the built-in app server is production-ready.
+
+Make sure to deploy the output of `npm run build`
+
+```
+├── package.json
+├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
+├── server.js
+├── build/
+│   ├── client/    # Static assets
+│   └── server/    # Server-side code
 ```
 
-### Test
+## Styling
 
-```bash
-pnpm run test
-```
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
 
-View and interact with your tests via UI.
+---
 
-```bash
-pnpm run test:ui
-```
-
-## License
-
-This project is licensed under the MIT License.
+Built with ❤️ using React Router.

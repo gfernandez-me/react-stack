@@ -1,10 +1,4 @@
-**/node_modules
-**/dist
-**/coverage
-**/build
-**/tests
-
-.github
-.devcontainer
-.git
-.vscode
+.react-router
+build
+node_modules
+README.md
